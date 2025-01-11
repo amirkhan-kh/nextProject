@@ -1,0 +1,215 @@
+footer{
+    .container{
+
+        .up{
+            display: flex;
+            border-top: 1px solid #F1F1F3;
+            border-bottom: 1px solid #F1F1F3;
+
+            .left{
+                padding: 80px 80px 80px 0;
+
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px;
+
+                    .logo{
+                        .social{
+                            display: none;
+                        }
+                    }
+
+                    .buttons{
+                        display: flex;
+                        gap: 10px;
+
+                        input{
+                            padding: 16px 167px 16px 20px;
+                            background-color: #F1F1F3;
+                            color: #98989A;
+                            border: none;
+                            outline: none;
+                            border-radius: 32px;
+                            font-weight: 500;
+                            // grid-row-start: 18px;
+                        }
+
+                        button{
+                            padding: 16px 30px;
+                            background-color: #FFD400;
+                            border: none;
+                            border-radius: 32px;
+                            font-weight: 600;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+            .right{
+                display: flex;
+                align-items: center;
+                border-left: 1px solid #F1F1F3;
+                padding: 80px;
+
+                .row{
+                    width: 241px;
+                    height: 208px;
+            
+                    h2{
+                        margin-bottom: 18px;
+                        font-weight: 500px;
+                        font-size: 20px;
+                    }
+
+                    p{
+                        color: #656567;
+                        padding-top: 18px;
+                        font-weight: 400;
+                        font-size: 18px;
+                    }
+                }
+
+                .respons{
+                    display: none;
+                    border-top: 1px solid #F1F1F3;
+                    padding: 30px;
+                    
+
+                    
+                    h2{
+                        color: #262626;
+                        font-weight:500;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .down{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px 0;
+
+            p{
+                color: #656567;
+                font-weight: 400;
+                font-size: 18px;
+            }
+
+            .terms{
+                display: flex;
+                gap: 24px;
+                
+                p{
+                    color: #98989A;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+
+                small{
+                    color: #F1F1F3;
+                }
+            }
+
+            .social{
+                display: flex;
+                gap: 21px;
+            }
+        }
+    }
+}
+
+@media(max-width:1090px){
+    footer{
+        .container{
+            .up{
+                .left{
+                    padding: 20px;
+                }
+
+                .right{
+                    padding: 10px;
+
+                    .row{
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:850px){
+    footer{
+        .container{
+            .up{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .left{
+                    .card{
+
+                        .logo{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .social{
+                                display: flex;
+                            }
+                        }
+
+                        .buttons{
+                            input{
+                                width: 100%;
+                                padding: 10px 25px 10px 20px;
+                                font-weight: 300;
+                                font-size: 12px;
+                                
+                            }
+                        }
+                    }
+                }
+
+                .right{
+                    display: flex;
+                    flex-direction: column;
+
+                    .row{
+                        display: none;
+                    }
+
+                    .respons{
+                        display: flex;
+                        gap: 30px;
+                    }
+
+                }
+            }
+
+            .down{
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+
+                .terms{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    gap: 10px;
+                    small{
+                        display: none;
+                    }
+                }
+
+
+                .social{
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,158 @@
+#Question {
+  margin-bottom: 200px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    .up {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+      .line {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+
+        h2 {
+          color: #1a1a1a;
+          font-weight: 600;
+          font-size: 48px;
+        }
+
+        p {
+          color: #98989a;
+          font-weight: 600;
+          font-size: 18px;
+        }
+      }
+
+      span {
+        color: #656567;
+        font-weight: 400;
+        font-size: 18px;
+      }
+
+      button {
+        padding: 14px 48px;
+        background-color: #ffd400;
+        border-radius: 32px;
+
+        border: none;
+        display: none;
+      }
+    }
+
+    .down {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      .category {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 40px 0;
+        border-bottom: 1px solid #f1f1f3;
+        border-top: 1px solid #f1f1f3;
+
+        h2 {
+          color: #98989a;
+          font-weight: 500;
+          font-size: 16px;
+        }
+
+        small {
+          color: #f1f1f3;
+        }
+      }
+
+      .cards {
+        display: flex;
+        gap: 20px;
+
+        .secondRow {
+          .Card {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 30px;
+            border: 1px solid #f1f1f3;
+            border-radius: 14px;
+            background-color: #fcfcfd;
+            margin-bottom: 16px;
+
+            h2 {
+              font-weight: 500;
+              font-size: 16px;
+            }
+
+            h4 {
+              color: #4c4c4d;
+              font-weight: 400;
+              font-size: 14px;
+            }
+
+            div {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              p {
+                size: 14px;
+              }
+            }
+          }
+        }
+
+        .card {
+          padding: 24px;
+          display: flex;
+          gap: 40px;
+          border: 1px solid #f1f1f3;
+          border-radius: 14px;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 16px;
+
+          h2 {
+            font-weight: 500;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  #Question {
+    margin-bottom: 50px;
+    .container {
+      .up {
+        .line {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+
+        button {
+          display: block;
+        }
+      }
+
+      .down {
+        display: flex;
+        flex-direction: column-reverse;
+        .cards {
+          place-content: center;
+          .firstRow {
+            display: none;
+          }
+
+          .thirdRow {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
